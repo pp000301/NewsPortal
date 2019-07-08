@@ -1,0 +1,10 @@
+2019-07-08 15:01:36,903 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-08 15:01:40,016 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-08 15:01:42,521 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-07-08 15:01:42,612 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/final_progect_jd2]
+2019-07-08 15:01:42,613 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2019-07-08 15:01:42,613 INFO  - HHH10001003: Autocommit mode: false
+2019-07-08 15:01:42,629 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-07-08 15:01:45,712 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-07-08 15:01:54,282 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-08 15:01:55,862 INFO  - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/final_progect_jd2]
