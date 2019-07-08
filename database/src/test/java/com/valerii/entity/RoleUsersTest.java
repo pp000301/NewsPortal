@@ -9,7 +9,7 @@ import org.junit.AfterClass;
 import java.io.Serializable;
 import static org.junit.Assert.assertNotNull;
 
-public class AutorTest {
+public class RoleUsersTest {
 
     private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
@@ -21,20 +21,20 @@ public class AutorTest {
     @org.junit.Test
     public void acheckSaveEntity() {
         try (Session session = FACTORY.openSession()) {
-            com.valerii.entity.Autor petr = new Autor();
-            Serializable id = session.save(petr);
+            com.valerii.entity.RoleUsers roleUsers = new RoleUsers();
+            Serializable id = session.save(roleUsers);
             assertNotNull(id);
-            System.out.println(petr);
+            System.out.println(roleUsers);
         }
     }
 
     @org.junit.Test
     public void getEntity(){
         @Cleanup Session session = FACTORY.openSession();
-        val sveta= new com.valerii.entity.Autor();
-        Serializable id = session.save(sveta);
+        val roleUsers= new com.valerii.entity.RoleUsers();
+        Serializable id = session.save(roleUsers);
         assertNotNull(id);
-        com.valerii.entity.Autor test = session.get(com.valerii.entity.Autor.class, id);
+        com.valerii.entity.RoleUsers test = session.get(com.valerii.entity.RoleUsers.class, id);
         assertNotNull(test);
     }
 
